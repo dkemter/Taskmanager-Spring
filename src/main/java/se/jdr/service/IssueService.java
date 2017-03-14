@@ -32,7 +32,7 @@ public final class IssueService {
 				return addOrUpdate(new Issue(workItem, description));
 			});
 		} else {
-			throw new ServiceException("Invalid work item status");
+ 			throw new ServiceException("Invalid work item status");
 		}
 	}
 

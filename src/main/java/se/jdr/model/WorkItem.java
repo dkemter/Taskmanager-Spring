@@ -1,5 +1,7 @@
 package se.jdr.model;
 
+import org.springframework.data.annotation.CreatedBy;
+
 import java.util.Collection;
 
 import javax.persistence.Column;
@@ -24,6 +26,7 @@ public class WorkItem extends AbstractEntity {
 	private User user;
 	private String dateOfCompletion;
 	@OneToMany(mappedBy = "workItem")
+	@CreatedBy
 	private Collection<Issue> issues;
 
 	protected WorkItem() {

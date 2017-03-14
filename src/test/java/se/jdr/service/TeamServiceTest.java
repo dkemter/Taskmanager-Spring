@@ -43,8 +43,6 @@ public class TeamServiceTest {
 		when(teamRepository.save(team)).thenReturn(team);
 		when(userRepository.countByTeamId(team.getId())).thenReturn(12L);
 		teamService.addUserToTeam(user, team);
-
-
 	}
 
 }

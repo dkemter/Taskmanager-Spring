@@ -1,5 +1,6 @@
 package se.jdr.service;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -27,6 +28,8 @@ public class UserServiceTest {
 
 	@MockBean
 	UserRepository userRepository;
+	@Before
+
 
 
 	@Test
